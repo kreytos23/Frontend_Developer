@@ -1,0 +1,105 @@
+*(asterisco): Es el selector universal. Las propiedades se aplicaran a todos los elementos de nuestro HTML.
+
+Tipo: Son selectores que se aplican a cierto elemento HTML en específico. Las propiedades se aplicaran a la etiqueta que queremos, por ejemplo p, body, html, div, etc.
+
+Clase: Si nuestras etiqueta de HTML tienen un atributo de class podemos usar ese valor o identificador para que los cambios en el CSS afecten únicamente a ese elemento.
+
+ID: Es similar al anterior, si la etiqueta HTML tiene un ID podemos afectar solo ese elemento.
+
+Las Pseudo-clases y Pseudo-elementos nos permiten ser aún más específicos con qué elemento o partes de nuestros elementos deben recibir los estilos.
+
+Para usarlas debemos definir el selector base (por ejemplo, p) seguido de dos puntos y la pseudo-clase que queremos estilizar (por ejemplo: p:first-child). En el caso de los pseudo-elementos debemos usar el dos puntos 2 veces (p::first-letter).
+
+/* Asterisco (universal) */
+* {
+  margin: 0;
+}
+
+/* Tipo */
+h1 {
+  color: red;
+}
+
+/* Clase */
+.saludo {
+  font-size: 2em;
+}
+
+/* ID */
+#id {
+  border-radius: 20px;
+}
+
+/* Pseudo-clases */
+p:first-child {
+  color: white;
+}
+
+p:last-child {
+  color: purple;
+}
+
+p:nth-child(2n) {
+  color: red;
+}
+
+**Los objetivos son:
+
+Predecible > Escribir reglas claras.
+Reutilizable > No escribir codigo redundante.
+Mantenible > Que sea facil de leer y adaptarnos a los estandares.
+Escalable > Que pueda crecer facilmente pero sin afectar el rendimiento.
+
+**Buenas practicas
+
+>Establecer reglas para que el equipo se entienda.
+>Explicar la estructura base o dar los fundamentos del proyecto a un nuevo integrante.
+>Evitar hojas de estilo muy extensas
+>Tener una buena documentación explicando ciertos aspectos del codigo.
+
+
+***METODOLOGIAS***
+
+OOCSS****
+css orientado a objetos. Separa el diseño del contenido, así podemos reutilizar nuestro código
+
+
+BEM****
+Block Element Modifier. Separa los elementos y los modificadores
+
+SMACSS*****
+
+Scalable and Modular Arquitecture for CSS. Arquitectura de css escalable y modular. PAra eso se realizan cinco pasos
+
+Dividir nuestro css en componentes base
+Definir Layout. Elementos que se utilizan solo una vez. ej. Footer, Header
+Definir Modulos. Componentes que se usan mas de una vez
+Definir Estados. Estos estados definen los cambios que existen en nuestros elementos/componentes. ej. Cambio de color cuando hacen hover
+Definir Temas. Separar los temas y sus cambios. Si tuvieras temas
+
+
+
+ITCSS******
+
+Inverted Triangle CSS. Triangulo Invertido de CSS. Lo que nos indica esta metodologia es poder dividir todos nuestros archivos de css en ciertas partes para que no se mezclen.
+Triangulo invertido, desde arriba hacia abajo:
+
+Ajustes
+Herramientas
+Generico
+Elementos
+Objetos
+Componentes
+Utilidades
+Especificidad: elementos o clases con mayor peso que otros.
+Magnitud
+Claridad
+
+Atomic Design*****
+
+Basados en la quimica.
+Atomos < Moleculas < Organismos < Templates < Paginas
+
+La eleccion de la metodologia depende del proyecto y del equipo
+
+Anotacion: No es tan buena practica usar !important
