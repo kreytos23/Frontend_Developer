@@ -10,14 +10,14 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../Assets/banner.png" alt="Logo de Platzi Videos">
+        <img tabindex="0" class="header__img" src="../Assets/banner.png" alt="Logo de Platzi Videos">
     </header>
     <section class="login">
         <section class="login__container">
-            <h2>Inicia Sesión</h2>
+            <h2 tabindex="1">Inicia Sesión</h2>
             <form class="login__container--form">
-                <input type="text" class="input" placeholder="Correo">
-                <input type="password" class="input" placeholder="Contraseña">  
+                <input aria-label="Correo" type="text" class="input" placeholder="Correo">
+                <input aria-label="Contraseña" type="password" class="input" placeholder="Contraseña">  
                 <button class="button">Iniciar Sesión</button>
                 <div class="login__container--remember-me">
                     <label for="">

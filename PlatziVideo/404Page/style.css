@@ -1,65 +1,82 @@
 body {
-    margin: 0;
-    font-family: 'Muli', sans-serif;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
 }
 
 .header {
-    align-items: center;
-    background-color: #21c08b;
-    color: white;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    top: 0px;
-    width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #21c08b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0px;
+  width: 100%;
 }
 
 .header__img {
-    margin-left: 30px;
-    width: 200px;
+  margin-left: 30px;
+  width: 200px;
 }
 
 main {
-    background: linear-gradient(#21C08D,#AB88FF);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    width: 100%;
-    height: calc(100vh - 200px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#21C08D), to(#AB88FF));
+  background: linear-gradient(#21C08D, #AB88FF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  width: 100%;
+  height: calc(100vh - 200px);
 }
 
 .error__description .error__title {
-    font-size: 70px;
-    font-weight: bold;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 .error__description p {
-    font-size: 40px;
-    font-style: italic;
+  font-size: 40px;
+  font-style: italic;
 }
 
 .error__image img {
-    width: 80%;
+  width: 80%;
 }
 
 .footer {
-    background-color: #AB88FF;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
+  background-color: #AB88FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
 }
 
 .footer a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
 }
 
-.footer a:hover{
-    text-decoration: underline;
+.footer a:hover {
+  text-decoration: underline;
 }
+/*# sourceMappingURL=style.css.map */
