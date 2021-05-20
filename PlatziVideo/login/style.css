@@ -32,6 +32,7 @@ body {
 .login__container{
     background-color: rgba(255, 255, 255, 0.1) ;
     border: 2px solid white;
+    box-shadow: -2px 3px 20px 9px rgba(0,0,0,0.7);
     border-radius: 40px;
     color: white;
     padding: 60px 68px 40px;
@@ -151,4 +152,23 @@ body {
 
 .footer a:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0px 20px;
+        width: 90%;
+    }
+    .login{
+        margin-top: -2px;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: -2px;
+        justify-content: space-evenly;
+    }
 }

@@ -56,6 +56,10 @@ body {
     color: white;
 }
 
+main {
+    margin-bottom: 100px;  
+}
+
 .main {
     height: 300px;
     display: flex;
@@ -97,7 +101,7 @@ body {
     overflow-x: scroll;
     padding: 20px 30px;
     box-sizing: border-box;
-    position: relative;    
+    position: relative;  
 }
 
 .carousel__title {
@@ -193,4 +197,24 @@ body {
 }
 ::-webkit-scrollbar:hover:active {
     background: #999;
+}
+
+.footer {
+    background-color: #8F57FD;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
 }
